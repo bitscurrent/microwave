@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>microwave kalculator</title>
+    <title>
+      Microwave Calculator: Frequency, Wavelength, Effective Dielectric Constant
+    </title>
+
     <link href="style.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Microwave calculator for calculating frequency, wavelength, and effective dielectric constant."
+    />
   </head>
   <body>
     <header>
@@ -14,6 +21,21 @@
       </div>
     </header>
     <main>
+      <section class="main-container">
+        <h2>About the Microwave Calculator</h2>
+        <p>
+          Our microwave calculator is a powerful tool designed to calculate
+          frequency, wavelength, and effective dielectric constant. It helps
+          engineers, students, and hobbyists in the field of microwave
+          engineering to perform quick and accurate calculations for their
+          projects and experiments.
+        </p>
+        <p>
+          The calculator takes input values such as speed, wavelength, and
+          relative permittivity (dielectric constant) and provides instant
+          results, making microwave calculations hassle-free.
+        </p>
+      </section>
       <div class="main-container">
         <h1>Calculate Frequency and Wavelength</h1>
         <div class="input-container">
@@ -38,6 +60,9 @@
         <div id="result"></div>
 
         <h1>Calculate Effective dielectric constant</h1>
+        <div class="microstrip-image">
+          <img src="/assets/microstrip.jpg" alt="" />
+        </div>
         <p>
           The effective dielectric constant εeff (a.k.a. Keff) of microstrip is
           calculated by:
@@ -69,6 +94,18 @@
     </main>
     <footer class="footer">
       <p>&copy; 2024 Dilip</p>
+
+      <p>
+        Donate:
+        <a
+          href="https://www.paypal.com/donate?business=edeelep"
+          target="_blank"
+        >
+          <img style="width: 4%; height: 4%;""
+          src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg"
+          alt="Donate with PayPal" />
+        </a>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>

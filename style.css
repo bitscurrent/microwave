@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: auto;
+    background-color: aquamarine;
 }
+
 
 .heading{
 /* padding-bottom: 10px; */
@@ -25,8 +27,16 @@ background: #e2cccc;
     /* padding: 5px; */
 }
 
+.microstrip-image{
+    position: absolute;
+    top: 295px;
+    left: 615px;
+    margin: 19px;
+    padding: 5px;
+}
+
 .footer {
-    position: fixed;
+    position: relative;
     color: #cc1010;
     text-align: center; /* Center the text */
     bottom: 0;
