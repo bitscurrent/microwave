@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>microwave kalculator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Mikrowabe Kalkulatar</h1>
+        <hr />
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <h1>Calculate Frequency and Wavelength</h1>
+        <div class="input-container">
+          <label for="speed">Speed (m/s):</label>
+          <input
+            id="speed"
+            type="number"
+            value="3000000"
+            placeholder="3000000"
+          />
+        </div>
+        <div class="input-container">
+          <label for="wavelength">Wavelength (m):</label>
+          <input type="number" id="wavelength" placeholder="Enter wavelength" />
+        </div>
+        <div class="input-container">
+          <label for="frequency">Frequency (Hz):</label>
+          <input type="number" id="frequency" placeholder="Enter frequency" />
+        </div>
+
+        <button id="calculate">Calculate</button>
+        <div id="result"></div>
+
+        <h1>Calculate Effective dielectric constant</h1>
+        <p>
+          The effective dielectric constant εeff (a.k.a. Keff) of microstrip is
+          calculated by:
+        </p>
+        <div class="input-container">
+          <div class="input-Er">
+            <label for="Er"> Enter Er (unitless)</label>
+            <input
+              type="number"
+              id="Er"
+              placeholder="relative dielectric constant"
+            />
+          </div>
+
+          <div class="input-H">
+            <label for="H"> Enter H (mm)</label>
+            <input type="number" id="H" placeholder="height" />
+          </div>
+
+          <div class="input-W">
+            <label for="W"> Enter H (mm)</label>
+            <input type="number" id="W" placeholder="weight" />
+          </div>
+
+          <button id="dielectricCalculateButton">Calculate</button>
+          <div id="dielectricResult"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2024 Dilip</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
