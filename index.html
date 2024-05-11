@@ -6,17 +6,22 @@
     <title>
       Microwave Calculator: Frequency, Wavelength, Effective Dielectric Constant
     </title>
-
     <link href="style.css" rel="stylesheet" />
     <meta
       name="description"
       content="Microwave calculator for calculating frequency, wavelength, and effective dielectric constant."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
       <div class="heading">
-        <h1>Mikrowabe Kalkulatar</h1>
+        <h1>Microwave Calculator</h1>
         <hr />
       </div>
     </header>
@@ -55,13 +60,16 @@
           <label for="frequency">Frequency (Hz):</label>
           <input type="number" id="frequency" placeholder="Enter frequency" />
         </div>
-
         <button id="calculate">Calculate</button>
         <div id="result"></div>
 
         <h1>Calculate Effective dielectric constant</h1>
         <div class="microstrip-image">
-          <img src="/assets/microstrip.jpg" alt="" />
+          <img
+            src="/assets/microstrip.jpg"
+            alt=""
+            style="width: 100%; height: auto"
+          />
         </div>
         <p>
           The effective dielectric constant εeff (a.k.a. Keff) of microstrip is
@@ -69,44 +77,61 @@
         </p>
         <div class="input-container">
           <div class="input-Er">
-            <label for="Er"> Enter Er (unitless)</label>
+            <label for="Er">Enter Er (unitless):</label>
             <input
               type="number"
               id="Er"
-              placeholder="relative dielectric constant"
+              placeholder="Relative dielectric constant"
             />
           </div>
-
           <div class="input-H">
-            <label for="H"> Enter H (mm)</label>
-            <input type="number" id="H" placeholder="height" />
+            <label for="H">Enter H (mm):</label>
+            <input type="number" id="H" placeholder="Height" />
           </div>
-
           <div class="input-W">
-            <label for="W"> Enter H (mm)</label>
-            <input type="number" id="W" placeholder="weight" />
+            <label for="W">Enter W (mm):</label>
+            <input type="number" id="W" placeholder="Weight" />
           </div>
-
           <button id="dielectricCalculateButton">Calculate</button>
           <div id="dielectricResult"></div>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <p>&copy; 2024 Dilip</p>
 
-      <p>
-        Donate:
-        <a
-          href="https://www.paypal.com/donate?business=edeelep"
-          target="_blank"
-        >
-          <img style="width: 4%; height: 4%;""
-          src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg"
-          alt="Donate with PayPal" />
-        </a>
-      </p>
-    </footer>
+      <!-- <div class="input-container">
+        <h1>Characteristic Impedance</h1>
+        <div class="input-W">
+          <label for="w">Enter W (mm):</label>
+          <input type="number" id="w" placeholder="Weight" value="2" />
+        </div>
+        <div class="input-H">
+          <label for="h">Enter H (mm):</label>
+          <input type="number" id="h" placeholder="Height" value="3" />
+        </div>
+        <div class="input-Eff">
+          <label for="E_ff">Enter Eff:</label>
+          <input type="number" id="E_ff" placeholder="Eff" value="3" />
+        </div>
+        <button id="characteristicImpedanceButton">Calculate</button>
+        <div id="characteristicImpedanceResult"></div>
+      </div> -->
+    </main>
+    <div class="footer">
+      <footer class="container-fluid bg-dark text-white py-3">
+        <div class="row">
+          <div class="col-sm-4 text-center">&copy; 2024 Dilip</div>
+          <div class="col-sm-8 d-flex justify-content-end">
+            <a
+              href="https://www.paypal.com/paypalme/deelep?country.x=IN&locale.x=en_GB"
+              target="_blank"
+              class="text-white mx-2"
+              >Donate
+            </a>
+            <a href="#" class="text-white mx-2">Dilip</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

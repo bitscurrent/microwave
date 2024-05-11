@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: auto;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 
@@ -17,23 +17,29 @@ background: #e2cccc;
 
 .input-container input-H,
 .input-container input-W,
-.input-container input-Er {
+.input-container input-Er,
+.input-container input-Eff {
     padding-left: 105px;
     /* Additional styling */
 }
 
-.input-H, .input-W, .input-Er{
+.input-H, .input-W, .input-Er, .input-Eff{
     margin: 15px;
     /* padding: 5px; */
 }
 
 .microstrip-image{
     position: absolute;
-    top: 295px;
-    left: 615px;
+    top: 264px;
+    left: 728px;
     margin: 19px;
     padding: 5px;
 }
+
+.copyright{
+    text-align: center;
+}
+
 
 .footer {
     position: relative;
